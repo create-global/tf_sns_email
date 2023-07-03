@@ -6,6 +6,7 @@
       "Type" : "AWS::SNS::Topic",
       "Properties" : {
         "DisplayName" : "${display_name}",
+        "KmsMasterKeyId" : "alias/aws/sns",
         "Subscription": [
           {
            "Endpoint" : "${email_address}",
